@@ -16,7 +16,7 @@ os.getenv("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
 
-text_splitter= RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+text_splitter= RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 
 prompt = ChatPromptTemplate.from_template(
     """You are a helpful assistant. Use the following website content to answer the question.
@@ -126,4 +126,5 @@ if user_question := st.chat_input("Ask something about the website..."):
 
     # Show assistant answer
     st.markdown(f"<div class='stChatMessage assistant'>{answer}</div>", unsafe_allow_html=True)
+
     st.session_state.chat_history.append(("assistant", answer))
