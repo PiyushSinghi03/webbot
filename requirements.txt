@@ -6,6 +6,7 @@ langchain-google-genai
 chromadb
 python-dotenv
 tiktoken
+beautifulsoup4
 
 
 
