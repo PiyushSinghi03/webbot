@@ -1,8 +1,12 @@
+pip>=25.2
+setuptools>=68.0
+wheel>=0.40
 streamlit
 langchain-core
 langchain-google-genai
 langchain-community
 gemini # compatible version
 chromadb
+
 
 
