@@ -1,0 +1,7 @@
+streamlit==1.28.0
+langchain-core==0.1.0  # your version
+langchain-google-genai==0.0.7
+langchain-community==0.0.181
+langchain-text==0.0.195
+gemini==0.26.1  # compatible version
+chromadb==0.4.3
